@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <img src="mainlogo.jpg" ALIGN="left" width="100" height="100">
+        <div class="btn-group" style=" float:right;">
+            <a href="home.html"><button onclick="">Home</button></a>
+            <a href="login.html"><button onclick="">Logout</button></a>
+            <a href="donate.html"><button onclick="">Register</button></a>
+            <button onclick="history.back()">Previous Page</button>
+          </div>
+        <h1 id="title">Find blood donar</h1><h4 id="h4" style="float: right; margin-right: 50px; margin-top: 0px;"></h4>
+         <p style="color:orange">-----[where stranger become friends]-----</p>
+         <marquee><p id="description"><p style="color:red"><b>Warning: </b>Do not pay any amount to any person promising supply of blood packets or arranging donors.</p></p></marquee>
+         <BR CLEAR=”left” />
+         <link rel ="stylesheet"
+         href="about.css">
+    </head>
+
+    <body><fieldset>
+        <div class ="image-container">
+            <div><center><a href ="donate.html"><img src ="1.jpg" alt="donar"></a>         
+            <a href ="need.html"><img src ="2.jpg" alt="need"></a></center></div>
+        </div>
+        <div class="wrap">
+            <div class="floatleft"><ul>
+                <li>About us</li>
+                <a href ="who.html"><li>Who can & can't donate</li></a>
+                <a href ="fact.html"><li>Blood donation facts</li></a>
+              </ul></div>
+            <div class="floatright"><fieldset>
+                <legend>ABOUT US : </legend>
+               
+                Have you at anytime witnessed a relative of yours or a close friend 
+                searching frantically for a blood donor, when blood banks say out of stock, the donors in mind are out 
+                of reach and the time keeps ticking? Have you witnessed loss of life for the only reason that a donor 
+                was not available at the most needed hour? Is it something that we as a society can do nothing to 
+                prevent? This thought laid our foundation.<br><br>
+
+                "Find blood donar" is an organization that brings voluntary blood donors and those in need of blood 
+                on to a common platform.  Through this website, we seek donors who are willing to donate blood, 
+                as well as provide the timeliest support to those in frantic need of it.<br><br>
+                
+                Started in the year 2021, on 24 apr, in a small room with just 4 voluntary donors 
+                but with the zeal to serve our society, to inspire and spread the word, we dream 
+                to fulfill 100% blood need in India.<br><br>
+                
+                Our mission is to fulfill every blood request in the country with a promising web portal 
+                and motivated individuals who are willing to donate blood.<br><br>
+                
+                Our vision is to be “The hope of every Indian in search of a voluntary blood donor”<br><br>
+                Our motto - “Donate blood to save the most precious human life"</p></fieldset></div>
+            <div style="clear: both;"></div>
+        </div>
+        
+
+    </fieldset></body>
+        
+</html>
+<script>
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    document.getElementById("h4").innerHTML= "Welcome "+ vars["username"]+"      ";
+</script>
